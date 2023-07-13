@@ -1,0 +1,13 @@
+
+<div class="flex flex-row justify-center items-center gap-2">
+    <form  (ngSubmit)="searchCharacter(search)">
+        <input class="w-60 h-14 p-4 outline-none rounded-lg" 
+            type="text"
+            placeholder="Explora personajes..."
+            [(ngModel)]="search"
+            name="search">
+    </form>
+
+    <button class="w-60 h-14 p-4 outline-none rounded-lg bg-green-400 font-semibold font-serif"
+            (click)="searchRandom()">Explora tu personaje</button>
+</div>
