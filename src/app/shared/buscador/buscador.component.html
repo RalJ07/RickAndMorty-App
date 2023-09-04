@@ -3,11 +3,13 @@
     <form  (ngSubmit)="searchCharacter(search)">
         <input class="w-60 h-14 p-4 outline-none rounded-lg" 
             type="text"
-            placeholder="Explora personajes..."
+            placeholder="Nombre del personaje..."
             [(ngModel)]="search"
             name="search">
     </form>
 
     <button class="w-60 h-14 p-4 outline-none rounded-lg bg-green-400 font-semibold font-serif"
-            (click)="searchRandom()">Explora tu personaje</button>
+            (click)="searchRandom()">Explora personajes</button>
+
+    
 </div>
